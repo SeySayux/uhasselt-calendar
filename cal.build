@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project default="build">
+  
+  <target name="clean">
+    <delete dir="build" />
+
+  </target>
+
+  <target name="build">
+    <mkdir dir="build" />
+    <copy todir="build">
+      <fileset basedir="./deps">
+        <include name="*.dll" />
+      </fileset>
+    </copy>
+
+    <csc target="exe" output="build/cal.exe">
+      <sources>
+        <include name="src/**/*.cs"/>
+      </sources>
+
+      <references>
+        <include name="deps/*.dll" />
+      </references>
+    </csc>
+
+  </target>
+
+</project>
+
+<!--
+  vim: ft=xml
+-->
