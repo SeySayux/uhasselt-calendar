@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo -en "Content-Type: text/calendar; charset-utf-8\r\n\r\n"
+echo -en "Content-Type: text/calendar; charset=utf-8\r\n\r\n"
 
 mono build/cal.exe
