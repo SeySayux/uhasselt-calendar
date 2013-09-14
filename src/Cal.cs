@@ -13,7 +13,10 @@ class Cal {
     const string kCalendarUriSuffix = ".ics";
 
     static readonly String[] kCalendars = new String[] {
-        "677_2013_2014", // 3e bach informatica
+        "677_2013_2014", // 3ba informatica (S) (1816, 1588, 2941, 2168, 1303, 2297)
+        "678_2013_2014", // 3ba wiskunde (S) (1602)
+        "628_2013_2014", // 1ba tew: hi (T) (1537)
+        "665_2013_2014", // 1ba fysica (T) (1824, 0173)
     };
 
     static readonly String[] kCourseIds = new String[] {
