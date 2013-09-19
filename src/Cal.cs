@@ -29,7 +29,20 @@ class Cal {
         "2168", // Multimediatechnologie
         "1602", // Logica en modeltheorie
         "1303", // Software engineering
-        "2297", // Bacheloerproef
+        "2297", // Bachelorproef
+    };
+
+    static readonly String[] kCourseShortHands = new String[] {
+        "NATEC", // Natuurkunde en technologie
+        "???",   // Optica
+        "MECH",  // Mechanica
+        "COMNE", // Computernetwerken
+        "MOCEB", // Wetenschapsfilosofie
+        "KSTAT", // Kansrekening en statistiek
+        "MMT",   // Multimediatechnologie
+        "LMT",   // Logica en modeltheorie
+        "???",   // Software engineering
+        "???",   // Bachelorproef
     };
 
     public static void Main() {
@@ -37,17 +50,31 @@ class Cal {
             .Select(x => new Uri(kCalendarUriPrefix + x + kCalendarUriSuffix))
             .Select(x => iCalendar.LoadFromUri(x));
 
-        
         var output = new iCalendar();
         
         foreach(var cc in calendars) {
             foreach(var c in cc) {
                 foreach(var e in c.Events) {
-                    var match = Regex.Match(e.Description, @"\d\d\d\d");
+                    if(e.Description != null) {
+                        // Filter on course number by default.
+                        var match = Regex.Match(e.Description, @"\d\d\d\d");
 
-                    if(!match.Success ||
-                            kCourseIds.Any(x => x == match.Value)) {
-                        output.AddChild(e.Copy<Event>());
+                        if(!match.Success ||
+                                kCourseIds.Any(x => x == match.Value)) {
+                            output.AddChild(e.Copy<Event>());
+                        }
+                    } else {
+                        // Filter on course shorthand when the university fucks
+                        // up.
+                        if(e.Summary == null) {
+                            // This should not happen... ever.
+                            continue;
+                        }
+                        
+                        e.Description = e.Summary;
+                        if(kCourseShortHands.Any(x => e.Description.Contains(x))) {
+                            output.AddChild(e.Copy<Event>());
+                        }
                     }
                 }
             }
