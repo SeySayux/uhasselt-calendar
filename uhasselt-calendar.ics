@@ -1,5 +1,17 @@
 #!/bin/bash
 
+if echo $QUERY_STRING | egrep -vq '^\w+$'; then 
+    echo -en "Content-Type: text/plain; charset=utf-8\r\n"
+    echo -en "Status: 403 Forbidden\r\n\r\n"
+    exit 0
+fi
+
+if [ '!' -f "$QUERY_STRING".xml ]; then
+    echo -en "Content-Type: text/plain; charset=utf-8\r\n"
+    echo -en "Status: 404 Not Found\r\n\r\n"
+    exit 0
+fi
+
 echo -en "Content-Type: text/calendar; charset=utf-8\r\n\r\n"
 
-mono build/cal.exe
+mono build/cal.exe $QUERY_STRING

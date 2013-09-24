@@ -1,10 +1,26 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Xml.Serialization;
 using DDay.iCal;
 using DDay.iCal.Serialization.iCalendar;
+
+public class Schedule {
+    public Calendar[] Calendars { get; set; }
+}
+
+public class Calendar {
+    public String Id { get; set; }
+    public Course[] Courses { get; set; }
+}
+
+public class Course {
+    public String Id { get; set; }
+    public String Abbreviation { get; set; }
+}
 
 class Cal {
 
@@ -46,14 +62,19 @@ class Cal {
         "???",   // Bachelorproef
     };
 
-    public static void Main() {
-        var calendars = kCalendars
-            .Select(x => new Uri(kCalendarUriPrefix + x + kCalendarUriSuffix))
-            .Select(x => iCalendar.LoadFromUri(x));
+    
+    public static void Main(string[] args) {
+        var serializer = new XmlSerializer(typeof(Schedule));
+
+        var reader = new StreamReader(args[0] + ".xml");
+        Schedule schedule = (Schedule)serializer.Deserialize(reader);
 
         var output = new iCalendar();
+
+        foreach(var cal in schedule.Calendars) {
+            var id = kCalendarUriPrefix + cal.Id + kCalendarUriSuffix;
+            var cc = iCalendar.LoadFromUri(new Uri(id));
         
-        foreach(var cc in calendars) {
             foreach(var c in cc) {
                 foreach(var e in c.Events) {
                     if(e.Description != null) {
@@ -61,7 +82,7 @@ class Cal {
                         var match = Regex.Match(e.Description, @"\d\d\d\d");
 
                         if(!match.Success ||
-                                kCourseIds.Any(x => x == match.Value)) {
+                                cal.Courses.Any(x => x.Id == match.Value)) {
                             output.AddChild(e.Copy<Event>());
                         }
                     } else {
@@ -73,7 +94,9 @@ class Cal {
                         }
                         
                         e.Description = e.Summary;
-                        if(kCourseShortHands.Any(x => e.Description.Contains(x))) {
+
+                        if(cal.Courses.Any(
+                                x => e.Description.Contains(x.Abbreviation))) {
                             output.AddChild(e.Copy<Event>());
                         }
                     }
