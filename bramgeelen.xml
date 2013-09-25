@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedule>
+    <Calendars>
+        <Calendar>
+            <Id>677_2013_2014</Id> <!-- 3ba inf -->
+            <Courses>
+                <Course>
+                    <Id>1816</Id> <!-- Computer Netwerken -->
+                    <Abbreviation>COMNE</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1588</Id> <!-- Wetenschapsfilosofie -->
+                    <Abbreviation>MOCEB</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2941</Id> <!-- Kansrekening en statistiek -->
+                    <Abbreviation>KSTAT</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2168</Id> <!-- Multimediatechnologie -->
+                    <Abbreviation>MMT</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+        <Calendar>
+            <Id>671_2013_2014</Id> <!-- 2ba wis -->
+            <Courses>
+                <Course>
+                    <Id>1447</Id> <!-- Meetkunde -->
+                    <Abbreviation>Meetkunde</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+        <Calendar>
+            <Id>666_2013_2014</Id> <!-- 1ba wis -->
+            <Courses>
+                <Course>
+                    <Id>0173</Id> <!-- Mechanica -->
+                    <Abbreviation>MECH</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+    </Calendars>
+</Schedule>
+
