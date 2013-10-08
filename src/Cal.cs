@@ -28,6 +28,24 @@ class Cal {
 
     const string kCalendarUriSuffix = ".ics";
 
+    public static void InjectCustomEvents(Course course, iCalendar output) {
+        switch(course.Id) {
+        case "0173": {// mechanica
+            Event e = new Event();
+            e.Description = 
+                    "MECH; G8; (Practicum); Voor: 3de bachelor informatica";
+            e.Summary = e.Description;
+            e.Location = "G8";
+            e.Location = "G8";
+            e.DTStart = new iCalDateTime(2013, 11, 08, 13, 00, 00);
+            e.DTEnd = new iCalDateTime(2013, 11, 08, 17, 00, 00);
+
+            output.AddChild(e);
+            break;
+        }
+        }
+    }
+
     public static void Main(string[] args) {
         var serializer = new XmlSerializer(typeof(Schedule));
 
@@ -39,6 +57,9 @@ class Cal {
         foreach(var cal in schedule.Calendars) {
             var id = kCalendarUriPrefix + cal.Id + kCalendarUriSuffix;
             var cc = iCalendar.LoadFromUri(new Uri(id));
+
+            foreach(var course in cal.Courses)
+                InjectCustomEvents(course, output);
         
             foreach(var c in cc) {
                 foreach(var e in c.Events) {
