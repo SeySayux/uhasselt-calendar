@@ -36,7 +36,8 @@ class Cal {
                     "MECH; G8; (Practicum); Voor: 3de bachelor informatica";
             e.Summary = e.Description;
             e.Location = "G8";
-            e.Location = "G8";
+            e.Class = "PUBLIC";
+            e.UID = "000000_injected";
             e.DTStart = new iCalDateTime(2013, 11, 08, 13, 00, 00);
             e.DTEnd = new iCalDateTime(2013, 11, 08, 17, 00, 00);
 
