@@ -64,6 +64,9 @@ class Cal {
         
             foreach(var c in cc) {
                 foreach(var e in c.Events) {
+                    // Add calendar ID to summary.
+                    e.Summary = e.Summary + cal.Id;
+                    
                     if(e.Description != null) {
                         // Filter on course number by default.
                         var match = Regex.Match(e.Description, @"\d\d\d\d");
