@@ -38,8 +38,10 @@ class Cal {
             e.Location = "G8";
             e.Class = "PUBLIC";
             e.UID = "000000_injected";
-            e.DTStart = new iCalDateTime(2013, 11, 08, 13, 00, 00);
-            e.DTEnd = new iCalDateTime(2013, 11, 08, 17, 00, 00);
+            e.DTStart = new iCalDateTime(2013, 11, 08, 12, 00, 00);
+            e.DTStart.IsUniversalTime = true;
+            e.DTEnd = new iCalDateTime(2013, 11, 08, 16, 00, 00);
+            e.DTEnd.IsUniversalTime = true;
 
             output.AddChild(e);
             break;
