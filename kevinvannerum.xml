@@ -22,11 +22,15 @@
                 </Course>
                 <Course>
                     <Id>1303</Id> <!-- Software engineering -->
-                    <Abbreviation>SOFT</Abbreviation>
+                    <Abbreviation>SOFEN</Abbreviation>
                 </Course>
                 <Course>
                     <Id>2297</Id> <!-- Bachelorproef -->
                     <Abbreviation>BACH</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1598</Id> <!-- Inleiding tot Sterrenkunde -->
+                    <Abbreviation>STEAS</Abbreviation>
                 </Course>
             </Courses>
         </Calendar>
@@ -48,14 +52,5 @@
                 </Course>
             </Courses>
         </Calendar>
-	<Calendar>
-            <Id>666_2013_2014</Id> <!-- 3ba fys -->
-            <Courses>
-                <Course>
-                    <Id>1598</Id> <!-- Sterrenkunde en Astrofysica -->
-                    <Abbreviation>ASTR</Abbreviation>
-                </Course>
-            </Courses>
-        </Calendar>
-    </Calendars>
+	    </Calendars>
 </Schedule>

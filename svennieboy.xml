@@ -22,20 +22,15 @@
                 </Course>
                 <Course>
                     <Id>1303</Id> <!-- Software engineering -->
-                    <Abbreviation>???</Abbreviation>
+                    <Abbreviation>SOFEN</Abbreviation>
                 </Course>
                 <Course>
                     <Id>2297</Id> <!-- Bachelorproef -->
                     <Abbreviation>???</Abbreviation>
                 </Course>
-            </Courses>
-        </Calendar>
-        <Calendar>
-            <Id>634_2013_2014</Id> <!-- BEW - 3 bach TEW handelsingenieur in beleidsinformatica -->
-            <Courses>
                 <Course>
-                    <Id>2065</Id> <!-- Onderhandelen -->
-                    <Abbreviation>OH</Abbreviation>
+                    <Id>1598</Id> <!-- Inleiding tot Sterrenkunde -->
+                    <Abbreviation>STEAS</Abbreviation>
                 </Course>
             </Courses>
         </Calendar>
@@ -45,6 +40,15 @@
                 <Course>
                     <Id>0173</Id> <!-- Mechanica -->
                     <Abbreviation>MECH</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+        <Calendar>
+            <Id>628_2013_2014</Id>
+            <Courses>
+                <Course>
+                    <Id>1955</Id> <!-- North-South -->
+                    <Abbreviation>???</Abbreviation>
                 </Course>
             </Courses>
         </Calendar>
