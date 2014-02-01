@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedule>
+    <Calendars>
+        <Calendar>
+            <Id>677_2013_2014</Id> <!-- 3ba inf -->
+            <Courses>
+                <Course>
+                    <Id>1816</Id> <!-- Computer Netwerken -->
+                    <Abbreviation>COMNE</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1588</Id> <!-- Wetenschapsfilosofie -->
+                    <Abbreviation>MOCEB</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2941</Id> <!-- Kansrekening en statistiek -->
+                    <Abbreviation>KSTAT</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2179</Id> <!-- Geavanc. Databasetech. -->
+                    <Abbreviation>GDBT</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1303</Id> <!-- Software engineering -->
+                    <Abbreviation>SOFEN</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2297</Id> <!-- Bachelorproef -->
+                    <Abbreviation>BACH</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1598</Id> <!-- Inleiding tot Sterrenkunde -->
+                    <Abbreviation>STEAS</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+	<Calendar>
+            <Id>678_2013_2014</Id> <!-- 3ba wis -->
+            <Courses>
+                <Course>
+                    <Id>1602</Id> <!-- Logica en modeltheorie -->
+                    <Abbreviation>LMT</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+        <Calendar>
+            <Id>628_2013_2014</Id> <!-- 1ba tew: hi -->
+            <Courses>
+                <Course>
+                    <Id>1178</Id> <!-- Econom. en Zakelijk Engels 1 -->
+                    <Abbreviation>EZE1</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+	<Calendar>
+            <Id>669_2013_2014</Id> <!-- 2ba che -->
+            <Courses>
+                <Course>
+                    <Id>0623</Id> <!-- Genetica -->
+                    <Abbreviation>GEN</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+        <Calendar>
+            <Id>666_2013_2014</Id> <!-- 1ba wis -->
+            <Courses>
+                <Course>
+                    <Id>0167</Id> <!-- Calculus -->
+                    <Abbreviation>Cal1</Abbreviation>
+                </Course>
+            </Courses>
+        </Calendar>
+            </Calendars>
+</Schedule>
