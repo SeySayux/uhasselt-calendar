@@ -2,49 +2,30 @@
 <Schedule>
     <Calendars>
         <Calendar>
+            <Id>672_2013_2014</Id> <!-- 2ba inf -->
+            <Courses>
+                <Course>
+                    <Id>2247</Id> <!-- Object Georiënteerd Programmeren 2 -->
+                    <Abbreviation>OOPII</Abbreviation>
+                </Course>
+		<Course>
+		     <Id>2252</Id> <!--  Project Software Ontwikkeling en Professionele Vaardigheden -->
+		     <Abbreviation>PSOPV</Abbreviation>
+		</Course>
+		<Course>
+		     <Id>0661</Id> <!-- Computer Graphics -->
+		     <Abbreviation>CG</Abbreviation>
+		</Course>
+            </Courses>
+        </Calendar>
+        <Calendar>
             <Id>677_2013_2014</Id> <!-- 3ba inf -->
             <Courses>
                 <Course>
-                    <Id>1588</Id> <!-- Wetenschapsfilosofie -->
-                    <Abbreviation>MOCEB</Abbreviation>
+                    <Id>1598</Id> <!-- Inleiding tot de sterrenkunde en astrofysica -->
+                    <Abbreviation>STEAS</Abbreviation>
                 </Course>
             </Courses>
         </Calendar>
-        <Calendar>
-            <Id>628_2013_2014</Id> <!-- 1ba tew: hi -->
-            <Courses>
-                <Course>
-                    <Id>1537</Id> <!-- Natuurkunde en technologie -->
-                    <Abbreviation>NATEC</Abbreviation>
-                </Course>
-            </Courses>
-        </Calendar>
-        <Calendar>
-            <Id>666_2013_2014</Id> <!-- 1ba wis -->
-            <Courses>
-                <Course>
-                    <Id>0173</Id> <!-- Mechanica -->
-                    <Abbreviation>MECH</Abbreviation>
-                </Course>
-            </Courses>
-        </Calendar>
-		<Calendar>
-			<Id>666_2013_2014</Id> <!-- 3ba fys -->
-			<Courses>
-				<Course>
-					<Id>1598</Id> <!-- Sterrenkunde en Astrofysica -->
-					<Abbreviation>ASTR</Abbreviation>
-				</Course>
-			</Courses>
-		</Calendar>
-		<Calendar>
-			<Id>664_2013_2014</Id> <!-- 1ba chem -->
-			<Courses>
-				<Course>
-					<Id>0251</Id> <!-- Structuurchemie -->
-					<Abbreviation>Structuurchemie</Abbreviation>
-				</Course>
-			</Courses>
-		</Calendar>
-    </Calendars>
+     </Calendars>
 </Schedule>
