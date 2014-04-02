@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Schedule>
     <Calendars>
-        <Calendar>
+        <Calendar primary="true">
             <Id>677_2013_2014</Id> <!-- 3ba inf -->
             <Courses>
                 <Course>

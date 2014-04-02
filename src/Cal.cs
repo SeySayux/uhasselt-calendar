@@ -13,6 +13,8 @@ public class Schedule {
 }
 
 public class Calendar {
+    [XmlAttribute("primary")]
+    public bool Primary { get; set; }
     public String Id { get; set; }
     public Course[] Courses { get; set; }
 }
@@ -75,7 +77,7 @@ class Cal {
                         // Filter on course number by default.
                         var match = Regex.Match(e.Description, @"\d\d\d\d");
 
-                        if(!match.Success ||
+                        if((!match.Success && cal.Primary) ||
                                 cal.Courses.Any(x => x.Id == match.Value)) {
                             output.AddChild(e.Copy<Event>());
                         }
