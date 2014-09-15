@@ -2,67 +2,61 @@
 <Schedule>
     <Calendars>
         <Calendar primary="true">
-            <Id>677_2013_2014</Id> <!-- 3ba inf -->
+            <Id>844_2014_2015</Id> <!-- Ma inf -->
             <Courses>
                 <Course>
-                    <Id>1816</Id> <!-- Computer Netwerken -->
-                    <Abbreviation>COMNE</Abbreviation>
+                    <Id>2169</Id> <!-- Beeldverwerking -->
+                    <Abbreviation>BEELD</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>1588</Id> <!-- Wetenschapsfilosofie -->
-                    <Abbreviation>MOCEB</Abbreviation>
+                    <Id>2166</Id> <!-- Parallel & Distributed Systems -->
+                    <Abbreviation>PDS</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>2941</Id> <!-- Kansrekening en statistiek -->
-                    <Abbreviation>KSTAT</Abbreviation>
+                    <Id>2167</Id> <!-- Compilers -->
+                    <Abbreviation>Compilers</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>2168</Id> <!-- Multimediatechnologie -->
-                    <Abbreviation>MMT</Abbreviation>
+                    <Id>2173</Id> <!-- Capita Selecta van de Multimedia -->
+                    <Abbreviation>CSMU</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>1303</Id> <!-- Software engineering -->
-                    <Abbreviation>SOFEN</Abbreviation>
+                    <Id>2170</Id> <!-- Geavanceerde Computer Graphics -->
+                    <Abbreviation>CGII</Abbreviation>
+                </Course>
+<!-- Semester 2 vanaf hier -->
+                <Course>
+                    <Id>1282</Id> <!-- Juridische Aspecten van Informatica -->
+                    <Abbreviation>???</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>2297</Id> <!-- Bachelorproef -->
+                    <Id>2208</Id> <!-- Project Management -->
+                    <Abbreviation>???</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2265</Id> <!-- Geavanceerde beeld- en videoverwerking -->
+                    <Abbreviation>???</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2176</Id> <!-- Netwerksoftware en -architecturen -->
+                    <Abbreviation>???</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1732</Id> <!-- ICT-governance -->
+                    <Abbreviation>???</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1727</Id> <!-- Business Process Modelling -->
                     <Abbreviation>???</Abbreviation>
                 </Course>
             </Courses>
         </Calendar>
         <Calendar>
-            <Id>678_2013_2014</Id> <!-- 3ba wis -->
+            <Id>843_2014_2015</Id> <!-- 3ba inf -->
             <Courses>
                 <Course>
-                    <Id>1602</Id> <!-- Logica en modeltheorie -->
-                    <Abbreviation>LMT</Abbreviation>
-                </Course>
-            </Courses>
-        </Calendar>
-        <Calendar>
-            <Id>628_2013_2014</Id> <!-- 1ba tew: hi -->
-            <Courses>
-                <Course>
-                    <Id>1537</Id> <!-- Natuurkunde en technologie -->
-                    <Abbreviation>NATEC</Abbreviation>
-                </Course>
-            </Courses>
-        </Calendar>
-        <Calendar>
-            <Id>666_2013_2014</Id> <!-- 1ba wis -->
-            <Courses>
-                <Course>
-                    <Id>0173</Id> <!-- Mechanica -->
-                    <Abbreviation>MECH</Abbreviation>
-                </Course>
-            </Courses>
-        </Calendar>
-        <Calendar>
-            <Id>665_2013_2014</Id> <!-- 1ba fysica -->
-            <Courses>
-                <Course>
-                    <Id>1824</Id> <!-- Optica -->
-                    <Abbreviation>OPT</Abbreviation>
+                    <Id>2421</Id> <!-- Studium Generale -->
+                    <Abbreviation>???</Abbreviation>
                 </Course>
             </Courses>
         </Calendar>
