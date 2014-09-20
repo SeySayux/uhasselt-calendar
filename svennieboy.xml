@@ -2,53 +2,51 @@
 <Schedule>
     <Calendars>
         <Calendar>
-            <Id>677_2013_2014</Id> <!-- 3ba inf -->
+            <Id>844_2014_2015</Id> <!-- Master inf -->
             <Courses>
                 <Course>
-                    <Id>1816</Id> <!-- Computer Netwerken -->
-                    <Abbreviation>COMNE</Abbreviation>
+                    <Id>2208</Id> <!-- Projectmanagement -->
+                    <Abbreviation>PROJM</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>1588</Id> <!-- Wetenschapsfilosofie -->
-                    <Abbreviation>MOCEB</Abbreviation>
+                    <Id>2166</Id> <!-- Parallel and Distributed Systems -->
+                    <Abbreviation>PDS</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>2941</Id> <!-- Kansrekening en statistiek -->
-                    <Abbreviation>KSTAT</Abbreviation>
+                    <Id>2167</Id> <!-- Compilers -->
+                    <Abbreviation>COMPI</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>2184</Id> <!-- HCI -->
-                    <Abbreviation>TTUI</Abbreviation>
+                    <Id>1282</Id> <!-- Juridische aspecten van informatica -->
+                    <Abbreviation>JAVI</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>1303</Id> <!-- Software engineering -->
-                    <Abbreviation>SOFEN</Abbreviation>
+                    <Id>2179</Id> <!-- Geavanceerde Databasetechnologie -->
+                    <Abbreviation>GDBT</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>2297</Id> <!-- Bachelorproef -->
-                    <Abbreviation>???</Abbreviation>
+                    <Id>2268</Id> <!-- Actuele Trends in Databases -->
+                    <Abbreviation>ATID</Abbreviation>
                 </Course>
                 <Course>
-                    <Id>1598</Id> <!-- Inleiding tot Sterrenkunde -->
-                    <Abbreviation>STEAS</Abbreviation>
+                    <Id>2266</Id> <!-- Datamining -->
+                    <Abbreviation>DM</Abbreviation>
                 </Course>
-            </Courses>
-        </Calendar>
-        <Calendar>
-            <Id>666_2013_2014</Id> <!-- 1ba wis -->
-            <Courses>
                 <Course>
-                    <Id>0173</Id> <!-- Mechanica -->
-                    <Abbreviation>MECH</Abbreviation>
+                    <Id>2175</Id> <!-- Mobile & Pervasive Computing -->
+                    <Abbreviation>MPCM</Abbreviation>
                 </Course>
-            </Courses>
-        </Calendar>
-        <Calendar>
-            <Id>628_2013_2014</Id>
-            <Courses>
                 <Course>
-                    <Id>1955</Id> <!-- North-South -->
-                    <Abbreviation>???</Abbreviation>
+                    <Id>2270</Id> <!-- 3D interactie en virtuele omgevingen -->
+                    <Abbreviation>3DIVO</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>1727</Id> <!-- Business process modelling  -->
+                    <Abbreviation>BPM</Abbreviation>
+                </Course>
+                <Course>
+                    <Id>2199</Id> <!-- ICT-Management -->
+                    <Abbreviation>ICTM</Abbreviation>
                 </Course>
             </Courses>
         </Calendar>
