@@ -52,6 +52,8 @@ class Cal {
     }
 
     public static void Main(string[] args) {
+        bool debug = args.Length == 2;
+
         var serializer = new XmlSerializer(typeof(Schedule));
 
         var reader = new StreamReader(args[0] + ".xml");
@@ -69,7 +71,7 @@ class Cal {
             foreach(var c in cc) {
                 foreach(var e in c.Events) {
                     // Append calendar Id to event.
-                    if(e.Summary != null) {
+                    if(e.Summary != null && debug) {
                         e.Summary = e.Summary + " [" + cal.Id + "]";
                     }
                     
