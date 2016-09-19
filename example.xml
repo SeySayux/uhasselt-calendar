@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedule>
+  <Calendars>
+    <Calendar primary="true">
+      <Id>1042_2015_2016</Id> <!-- Ma inf -->
+      <Courses>
+        <!-- Semester 1 -->
+          <Course>
+              <Id>2178</Id> <!-- Security & Computernetwerken -->
+              <Abbreviation>SCN</Abbreviation>
+          </Course>
+          <Course>
+              <Id>2174</Id> <!-- Multimediadesign -->
+              <Abbreviation>MMD</Abbreviation>
+          </Course>
+          <Course>
+              <Id>2186</Id> <!-- Actuele trends in HCI -->
+              <Abbreviation>ATHI</Abbreviation>
+          </Course>
+          <Course>
+              <Id>2179</Id> <!-- Geavanceerde Databasetechnologie -->
+              <Abbreviation>GDBT</Abbreviation>
+          </Course>
+        <!-- Semester 2 -->
+          <Course>
+              <Id>3367</Id> <!-- Internet of Things -->
+              <Abbreviation>MPC</Abbreviation>
+          </Course>
+          <Course>
+              <Id>2171</Id> <!-- Audioverwerking -->
+              <Abbreviation>AUDIO</Abbreviation>
+          </Course>
+      </Courses>
+    </Calendar>
+  </Calendars>
+</Schedule>
